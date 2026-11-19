@@ -1,0 +1,1 @@
+function f($n){ if($n<2) return $n; return f($n-1)+f($n-2);} $x = [1,2,3]; foreach($x as $k, $v){ print "$k=$v\n"; } print f(10);

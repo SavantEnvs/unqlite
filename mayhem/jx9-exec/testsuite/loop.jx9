@@ -1,0 +1,1 @@
+static $i = 0; $arr = array(); $src = [0,1,2,3,4,5,6,7,8,9]; foreach($src as $k, $v){ if($v % 2 == 0){ continue; } $arr[] = $v * 2; $i++; if($i > 3){ break; } } print count($arr); print array_sum($arr); $u = uniqid(); print is_string($u) ? "y" : "n"; print sprintf("%x %o %e %s", 255, 8, 1.5, "z");

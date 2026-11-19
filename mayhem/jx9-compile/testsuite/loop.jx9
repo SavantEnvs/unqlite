@@ -1,0 +1,1 @@
+static $i = 0; $arr = array(); while($i < 10){ $arr[] = $i * 2; $i++; } print count($arr); print array_sum($arr); $u = uniqid(); print is_string($u) ? "y" : "n"; print sprintf("%x %o %e %s", 255, 8, 1.5, "z");

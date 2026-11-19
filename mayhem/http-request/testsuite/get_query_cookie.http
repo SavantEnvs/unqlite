@@ -1,0 +1,6 @@
+GET /index.jx9?name=alice&id=42&arr[]=1&arr[]=2&q=a%20b+c HTTP/1.1
+Host: example.com
+User-Agent: fuzz/1.0
+Accept: */*
+Cookie: session=abc123; theme=dark; x=%41
+

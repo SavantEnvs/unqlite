@@ -1,0 +1,1 @@
+print json_decode("[1,2]"); $a={a:1,b:[1,2]}; print sprintf("%05d",3); db_create("c"); db_store("c",$a); print db_fetch_all("c");

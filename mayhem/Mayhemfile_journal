@@ -1,0 +1,9 @@
+project: savantenvs/unqlite
+target: journal
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/journal/testsuite
+cmds:
+  - cmd: /mayhem/out/fuzz_journal
+    libfuzzer: true
+    timeout: 5

@@ -1,0 +1,9 @@
+project: savantenvs/unqlite
+target: kv-ops
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/kv-ops/testsuite
+cmds:
+  - cmd: /mayhem/out/fuzz_kv_ops
+    libfuzzer: true
+    timeout: 5

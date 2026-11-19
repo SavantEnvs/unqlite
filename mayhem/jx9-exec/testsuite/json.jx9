@@ -1,0 +1,1 @@
+$j = json_encode({a:[1,2,{b:null}], c:true, d:1.5}); print $j; $d = json_decode($j); print $d.a[2]; switch($d.d){ case 1.5: print "ok"; break; default: print "no"; }

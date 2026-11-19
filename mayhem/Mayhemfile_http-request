@@ -1,0 +1,9 @@
+project: savantenvs/unqlite
+target: http-request
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/http-request/testsuite
+cmds:
+  - cmd: /mayhem/out/fuzz_http_request
+    libfuzzer: true
+    timeout: 5

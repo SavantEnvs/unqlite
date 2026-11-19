@@ -1,0 +1,9 @@
+project: savantenvs/unqlite
+target: db-file
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/db-file/testsuite
+cmds:
+  - cmd: /mayhem/out/fuzz_db_file
+    libfuzzer: true
+    timeout: 5

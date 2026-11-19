@@ -1,0 +1,9 @@
+project: savantenvs/unqlite
+target: jx9-compile
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/jx9-compile/testsuite
+cmds:
+  - cmd: /mayhem/out/fuzz_jx9_compile
+    libfuzzer: true
+    timeout: 5

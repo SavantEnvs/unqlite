@@ -1,0 +1,5 @@
+HEAD / HTTP/1.0
+X-Forwarded-For: 10.0.0.1
+Referer: http://a/b?c=d
+Authorization: Basic dXNlcjpwYXNz
+
